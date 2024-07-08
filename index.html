@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Alura Challenge Desafio 1 Lógica</title>
+    
+</head>
+<body>
+    <main class="main-container">
+        <header>
+            <img src="/assets/Frame 6.png" alt="Logo Alura">
+        </header>
+        <section class="big-container">
+
+            <div class="container-message">
+                <textarea name="Entrada" placeholder="Digite seu texto" id="text"></textarea>
+
+                <p id="symb"><img src="assets/symb.png" >  Apenas letras minúsculas e sem acento.</p>
+                <div class="con-buttons">
+                    <button class="content_button" id="button_criptografar" onclick="btnEncriptar()">Criptografar</button>
+                    <button class="content_button" id="button_descriptografar" onclick="btnDecriptar()">Descriptografar</button>
+                </div>
+            </div>
+            <div class="container-response" >
+                <div id="resultado">
+                    <img src="assets/princ_img.png">
+                    <p id="advice">Nenhuma mensagem <br> encontrada</p>
+                    <p>Digite um texto que você deseja criptografar ou descriptografar.</p>
+                    
+                </div>
+                <button id="bt_copiar">Copiar!</button> 
+            </div>
+          
+
+        </section>
+
+     </main>
+
+    <script type="text/javascript" src="app.js"></script>
+</body>
+</html>

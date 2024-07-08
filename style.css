@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+:root{
+--bg: #27272a;
+  --bg-secondary: #d4d4d8;
+  --cor-do-text:#0A3871;
+  --cor-destaque: #0284c7;
+  --cor-destaque2: #E9ECF8;
+  --fonte: 'Inter', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+   
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    background-color: var(--cor-destaque2);
+}
+
+header{
+    height: auto;
+  margin: 2rem 0 4rem 2rem;
+    
+}
+
+.main-container {
+    position: relative;
+}
+
+
+.big-container{
+    margin: 0 0 0 15rem;
+    padding: 1rem;
+    display: flex;
+    position: relative;
+}
+
+
+.container-message{
+    display: flex;
+    flex-direction: column;
+    margin: 0 10px 0 0px;
+    flex: 1;
+}
+
+
+#text{
+    color: var(--cor-do-text);
+    font-size: 1.5rem;
+    font-family: var(--cor-do-text);
+    min-height: 300px;
+    background-color: transparent;
+    width: 100%;
+    border:none;
+    overflow: hidden;  
+    outline: none;
+    resize: none;
+    box-shadow: none;
+    margin-bottom: 1rem;
+}
+
+textarea::placeholder {
+    color: var(--cor-do-text); 
+    
+}
+
+
+#symb{
+    display: flex;
+    font-size: 0.75rem;
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin: 10px 0px;
+}
+
+
+#button_criptografar, #button_descriptografar, #bt_copiar{
+    padding: 1rem 5rem 1rem 5rem; 
+    font-family:var(--fonte);
+    font-size: 16px;
+    border-radius: 20px;
+    border: none;
+    box-shadow:  2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+#button_criptografar{
+    color: #D8DFE8;
+    background-color: var(--cor-do-text);
+    margin-right: 10px;
+    border: 1px solid var(--cor-do-text);
+    
+}
+
+#button_descriptografar{
+    color: var(--cor-do-text);
+    background-color: #D8DFE8;
+    border: 1px solid var(--cor-do-text);
+}
+
+#button_criptografar:hover{
+    background-color: #757FB2;
+  
+    
+}
+#button_descriptografar:hover{
+    color: #D8DFE8;
+    background-color: #757FB2;
+    border: 1px solid var(--cor-do-text);
+}
+
+.container-response{
+    background-color: #fff;
+    position: absolute; 
+    top: -130px; /* posição no topo r */
+    right: 50px; /*  posição na direita */
+    height: 620px; /*  altura  */
+    width: 450px; /* largura  */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 32px;
+    box-shadow: 2px 4px 15px 0px rgba(77, 76, 76, 0.2);
+}
+
+#resultado{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.container-response img{
+    margin-top: -50px;
+    margin-bottom: 10px;
+}
+
+#advice{
+    font-size: 24px;
+    font-weight: bold;
+    
+}
+
+
+.container-response p{
+    text-align: center;
+    margin:10px
+}
+
+
+
+#bt_copiar{
+    padding: 1rem 7rem 1rem 7rem; 
+    position: fixed;
+    margin: 520px 0 0 0;
+    color: var(--cor-do-text);
+    background-color: #ffffff;
+    border: 1px solid var(--cor-do-text);
+}
+
+#bt_copiar:hover{
+    background-color: #757FB2;
+    color:#ffffff;
+}
+
+#response{
+    margin-top: -400px;
+    font-size: 24px;
+}
